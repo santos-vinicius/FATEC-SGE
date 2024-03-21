@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=M+PLUS+Rounded+1c:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}    
+  
+  
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    text-decoration: none;
+    background-color:  #F2F2F2;
+    color: #fdfdfd;
+}
+
+ /* HEADER */
+
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111d33;
+    margin: 1rem auto 1rem auto;
+    max-width: 80rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.logo img {
+    width: 55px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #274073;
+}
+
+.navbar form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #274073;
+}
+
+.navbar form button {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #274073;
+    border: 1px solid transparent;
+}
+
+.navbar form button a {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #F2F2F2;
+}
+
+.button-login:hover , .button-login:hover a{
+    background-color: #B3ADD9;
+    color: #274073;
+    transition: all 0.5s ease-out;
+}
+
+/* MAIN */
+
+main {
+    max-width: 80rem;
+    padding: 0 2rem 0 2rem;
+    margin: 10px auto 0 auto;
+}
+
+/* BANNER MAIN */
+
+.banner-main {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-areas: 
+        "header header";
+    column-gap: 2rem;     
+    max-height: 400px;
+    height: auto;
+    width: 100%;
+    
+}
+
+.banner-main img {
+    grid-column: 1 / span 2;
+    grid-area: header;
+    max-height: 400px;
+    height: auto;
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-text {
+    grid-column: 1 / 1; 
+    align-self: center;
+    width: 40%;
+    grid-area: header;
+    /* position: absolute;
+    top: 110px; */
+    margin: 15px;
+    padding: 25px 25px;
+    background-color: #274073;
+    border-radius: 10px;
+    color: #fdfdfd;
+}
+
+.banner-text p {
+    text-align: justify; 
+}
+
+.banner-text h1 { 
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.banner-text span p {
+    text-align: center;
+    font-weight: bolder;
+    color: #111d33;
+    background-color: #F2F2F2;
+    width: 90px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.banner-text span p:hover { 
+    background-color: #274073;
+    color: #fdfdfd;
+    border: 2px solid #fdfdfd;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+} 
+
+/* SERVICES MAIN */
+.services {
+    max-width: 80rem;
+    margin: 10px auto 10px auto;
+
+}
+
+.services h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 110px;
+    color: #fdfdfd;
+    background-color: #274073; 
+    margin: 10px 0 10px 0 ;
+    padding: 10px;
+    border-radius: 10px 
+}
+
+.cards-section {
+    color: #333140;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    column-gap: 10px;
+    margin: auto 0;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    height: 100%;
+    background-color: #e9e9e9;
+    padding: 10px 10px ;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 5px 5px;
+    text-align: center;
+    color: #274073;
+}
+
+.service-card img {
+    width: 360px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #274073 ;
+    margin: 10px 10px ;
+}
+
+.service-card p {
+    font-size: 16px;
+    text-align: left;
+    margin: 5px 10px
+}
+
+/* TEAM */  
+
+.team {
+    color: #111d33;
+    margin: 10px 0;
+}
+
+.team h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90px;
+    color: #fdfdfd;
+    background-color: #274073; 
+    margin: 10px 0 10px 0 ;
+    padding: 10px;
+    border-radius: 10px 
+}
+
+.team-section {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    column-gap: 10px
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: auto;
+    height: 100%;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* LOCATION */  
+
+.location h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 140px;
+    color: #fdfdfd;
+    background-color: #274073; 
+    margin: 10px 0 10px 0 ;
+    padding: 10px;
+    border-radius: 10px 
+}
+
+/* Color Theme Swatches in Hex */
+/* .Microsoft-Surface-Hub-3-1-hex { color: #B3ADD9; }
+.Microsoft-Surface-Hub-3-2-hex { color: #8091F2; }
+.Microsoft-Surface-Hub-3-3-hex { color: #4B61A6; }
+.Microsoft-Surface-Hub-3-4-hex { color: #274073; }
+.Microsoft-Surface-Hub-3-5-hex { color: #F2F2F2; } */
