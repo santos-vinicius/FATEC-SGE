@@ -100,8 +100,6 @@ main {
     align-self: center;
     width: 40%;
     grid-area: header;
-    /* position: absolute;
-    top: 110px; */
     margin: 15px;
     padding: 25px 25px;
     background-color: #274073;
@@ -144,7 +142,6 @@ main {
 .services {
     max-width: 80rem;
     margin: 10px auto 10px auto;
-
 }
 
 .services h2 {
@@ -221,8 +218,10 @@ main {
 
 .team-section {
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr 1fr;
-    column-gap: 10px
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin: 15px 0;
+
 }
 
 .team-card {
@@ -239,10 +238,25 @@ main {
     width: 160px;
     object-fit: cover;
     margin-bottom: 10px;
+    border: 3px solid #274073;
 }
 
 
 /* LOCATION */  
+
+.location-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    background-color: #111d33;
+    border-radius: 10px;
+}
+
+.location-map {
+    border-radius: 10px 0 0 10px;
+    width: 550px;
+    height: 300px;
+}
 
 .location h2 {
     font-family: 'Inter', sans-serif;
@@ -255,6 +269,128 @@ main {
     padding: 10px;
     border-radius: 10px 
 }
+
+.location-about {
+    align-self: center;
+}
+/* FOOTER */
+
+.footer {
+    color: #111d33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-weight: bold;
+}
+
+.footer-credits a { 
+    color: #111d33;
+    font-size: 16px;
+ 
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 620px) {
+    /* .banner-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-main img {
+        display: none;
+    }
+
+    .banner-text {
+        display: grid;
+
+        width: 500px;
+        margin: 5px;
+        align-self: stretch;
+    } */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .banner-text {
+        width: 50%;
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 10px;
+    }
+
+    .service-card {
+        justify-self: center;
+    }
+
+    .service-card img {
+        place-self: center;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .location-map {
+        height: 300px;
+        max-width: 350px;
+    }
+
+    .location-about {
+        padding: 10px;
+    }
+
+    .location-about p {
+        font-size: 14px;
+        text-align: justify;
+        margin-right: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 860px) and (max-width: 1024px) {
+
+    /* SERVICES */
+
+    .cards-section {
+        color: #333140;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin: auto 0;
+        /* place-items: center; */
+        
+    }
+    
+    .service-card {
+        align-self: center;
+        max-width: 460px;
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+    }
+
+    .service-card:last-child {
+        grid-column-end: span 2;
+    }
+    
+    .service-card img {
+        width: 350px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid #274073 ;
+        /* margin: 10px 10px ; */
+        place-self: center;
+    }
+    
+
+}
+
 
 /* Color Theme Swatches in Hex */
 /* .Microsoft-Surface-Hub-3-1-hex { color: #B3ADD9; }
