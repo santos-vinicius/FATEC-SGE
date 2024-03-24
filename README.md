@@ -26,7 +26,7 @@
 
 👤 **[Vinicius Santos](https://github.com/santos-vinicius)**
 
-* Website: [santosvinicius.dev](https://github.com/santos-vinicius)
+* Website: [santosvinicius.com.br](https://santosvinicius.com.br)
 * Twitter: [@sv1nicius](https://twitter.com/sv1nicius)
 * LinkedIn: [@santos-vinicius](https://linkedin.com/in/santos-vinicius)
 
