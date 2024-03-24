@@ -14,7 +14,7 @@
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/santos-vinicius/FATEC-SGE?style=flat-square">
 </p>
 
-### ✨ [Demo](https://www.santosvinicius.dev/)
+### ✨ [Demo](https://fatec-sge.vercel.app/)
 
 ### 🧰 Project Details
 
